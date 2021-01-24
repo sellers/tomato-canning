@@ -12,7 +12,7 @@ NOW=$(date +%W)
 
 set -x
 
-nvram export -dump | tee $BASEDIR/$DEVICEDIR/backup.cfg
+nvram export --dump | tee $BASEDIR/$DEVICEDIR/backup.cfg
 cp $BASEDIR/$DEVICEDIR/backup.cfg $BASEDIR/$DEVICEDIR/backup.$NOW.cfg
 
 
