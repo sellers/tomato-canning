@@ -7,7 +7,7 @@
 BASEDIR=/tmp/mnt/sda1
 DEVICEDIR=$(nvram get t_fix1)
 
-INIT=$(ls $BASEDIR/$DEVICEDIR || mkdir $BASEDIR/$DEVICEDIR)
+INIT=$(ls $BASEDIR/$DEVICEDIR || mkdir -p $BASEDIR/$DEVICEDIR)
 NOW=$(date +%W)
 
 set -x
